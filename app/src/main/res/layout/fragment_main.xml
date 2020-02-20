@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!--        android:layout_marginTop="350dp"--><![CDATA[
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/question_view"
+        tools:layout_editor_absoluteX="1dp">
+
+
+
+        ]]>
+
+        <Button
+            android:id="@+id/cheatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="494dp"
+            android:text="CHEAT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/question_view"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="Hello World!"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.078" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="404dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="294dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/backward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/backward_button" />
+
+            <ImageButton
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/forqard_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="404dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="412dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/falseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="False"
+
+                />
+
+            <Button
+                android:id="@+id/trueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="True" />
+        </LinearLayout>
+
+
+    <!--        android:layout_marginTop="250dp"--><![CDATA[
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp">
+
+
+
+    ]]>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

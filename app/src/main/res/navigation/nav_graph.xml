@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main2">
+    <fragment
+        android:id="@+id/main2"
+        android:name="work.nbcc.mikebashkatovassignment1.MainFragment"
+        android:label="main" >
+        <action
+            android:id="@+id/action_main2_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_main2_to_cheatFragment2"
+            app:destination="@id/cheatFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="work.nbcc.mikebashkatovassignment1.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/cheatFragment2"
+        android:name="work.nbcc.mikebashkatovassignment1.CheatFragment"
+        android:label="fragment_cheat"
+        tools:layout="@layout/fragment_cheat" >
+        <argument
+            android:name="question"
+            app:argType="integer" />
+        <argument
+            android:name="answer"
+            app:argType="string" />
+    </fragment>
+</navigation>
